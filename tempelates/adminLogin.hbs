@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin Login Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/adminLogin.css" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="login-form">
+        <h2 class="text-center">Admin Login</h2>
+        <h4 class="text-danger">{{msg}}</h4>
+        <form action="adminHome" method="post">
+            <div class="form-group">
+                <input type="text" name="adminName" class="form-control" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit"  class="btn btn-block">Login</button>
+            </div>
+            <div class="register-link">
+                Not registered? <a href="/adminSignup">Create an admin account</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
